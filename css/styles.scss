@@ -1,0 +1,84 @@
+@import "reset";
+
+$Blue: hsl(223, 87%, 63%);
+$Pale_Blue: hsl(223, 100%, 88%);
+$Light_Red: hsl(354, 100%, 66%);
+$Gray: hsl(0, 0%, 59%);
+$Very_Dark_Blue: hsl(209, 33%, 12%);
+
+body {
+    font-size: 1.25rem;
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.sr-only:not(:focus):not(:active) {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    white-space: nowrap; 
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.logo {
+    margin: auto;
+    width: 3.5rem;
+}
+
+.title {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: $Gray;
+    margin-top: 1.5rem;
+}
+
+.title-emphasis {
+    font-weight: 700;
+    color: $Very_Dark_Blue;
+}
+
+.subtitle {
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: $Very_Dark_Blue;
+}
+
+.notification-form {
+    margin: 1rem 0;
+}
+
+.form-fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.copyright {
+    font-weight: 300;
+    color: $Gray;
+    font-size: 0.65rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
