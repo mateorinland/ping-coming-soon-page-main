@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
+  <script src="https://kit.fontawesome.com/ea97db254d.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <main class="main-container">
@@ -17,19 +18,31 @@
     <h2 class="subtitle">Subscribe and get notified</h2>
     <form class="notification-form">
       <fieldset class="form-fieldset">
-        <legend class="sr-only">Provide your e-mail to get notified</legend>
-        <label class="email-label">
-          <input class="email-input" type="email">
+        <legend class="sr-only">Provide your email to get notified</legend>
+        <label class="email-label" for="mail">
+          <input class="email-input" name="mail" type="email" placeholder="Your email address..." required>
         </label>
         <button class="submit-button" type="submit">Notify Me</button>
       </fieldset>
     </form>
     <img class="illustration-dashboard" src="./images/illustration-dashboard.png" alt="An illustration of a web dashboard with graphs and illegible text">
-    <li class="icon-list">
-      <ul class="list-item"></ul>
-      <ul class="list-item"></ul>
-      <ul class="list-item"></ul>
-    </li>
+    <ul class="icon-list">
+      <li class="list-item">
+        <div class="icon-circle">
+          <i class="fa-brands fa-facebook-f fa-xs"></i>
+        </div>
+      </li>
+      <li class="list-item">
+        <div class="icon-circle">
+          <i class="fa-brands fa-twitter fa-xs"></i>
+        </div>
+      </li>
+      <li class="list-item">
+        <div class="icon-circle">
+          <i class="fa-brands fa-instagram fa-xs"></i>
+        </div>
+      </li>
+    </ul>
     <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
   </main>
   <footer>
