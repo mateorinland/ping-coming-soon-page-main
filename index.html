@@ -20,9 +20,10 @@
       <fieldset class="form-fieldset">
         <legend class="sr-only">Provide your email to get notified</legend>
         <label class="email-label" for="mail">
-          <input class="email-input" name="mail" type="email" placeholder="Your email address..." required>
+          <input class="email-input" name="mail" type="email" placeholder="Your email address..." aria-describedby="emailErrorMessage" required>
         </label>
         <button class="submit-button" type="submit">Notify Me</button>
+        <p class="email-error-message" id="emailErrorMessage" aria-live="assertive"></p>
       </fieldset>
     </form>
     <img class="illustration-dashboard" src="./images/illustration-dashboard.png" alt="An illustration of a web dashboard with graphs and illegible text">
@@ -51,5 +52,6 @@
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     </p>
   </footer>
+  <script src="./script.js"></script>
 </body>
 </html>
