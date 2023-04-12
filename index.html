@@ -1,57 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Ping coming soon page</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css">
-  <script src="https://kit.fontawesome.com/ea97db254d.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <main class="main-container">
-    <img class="logo" src="./images/logo.svg" alt="PING logo: black letters that spell 'ping' followed by a blue dot.">
-    <h1 class="title">We are launching <span class="title-emphasis">soon!</span></h1>
-    <h2 class="subtitle">Subscribe and get notified</h2>
-    <form class="notification-form">
-      <fieldset class="form-fieldset">
-        <legend class="sr-only">Provide your email to get notified</legend>
-        <label class="email-label" for="mail">
-          <input class="email-input" name="mail" type="email" placeholder="Your email address..." aria-describedby="emailErrorMessage" required>
-        </label>
-        <button class="submit-button" type="submit">Notify Me</button>
-        <p class="email-error-message" id="emailErrorMessage" aria-live="assertive"></p>
-      </fieldset>
-    </form>
-    <img class="illustration-dashboard" src="./images/illustration-dashboard.png" alt="An illustration of a web dashboard with graphs and illegible text">
-    <ul class="icon-list">
-      <li class="list-item">
-        <div class="icon-circle">
-          <i class="fa-brands fa-facebook-f fa-xs"></i>
-        </div>
-      </li>
-      <li class="list-item">
-        <div class="icon-circle">
-          <i class="fa-brands fa-twitter fa-xs"></i>
-        </div>
-      </li>
-      <li class="list-item">
-        <div class="icon-circle">
-          <i class="fa-brands fa-instagram fa-xs"></i>
-        </div>
-      </li>
-    </ul>
-    <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
-  </main>
-  <footer>
-    <p class="attribution">
-      Coded by <a href="https://www.linkedin.com/in/mateo-rinland-9b1a93bb/">Mateo Rinland</a>.
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    </p>
-  </footer>
-  <script src="./script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A Frontend Mentor challenge for web development. This one is a Coming Soon page for the
+  Ping service with an option to subscribe by leaving an email address and getting notified."
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Ping coming soon page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/ea97db254d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main class="main-container">
+      <img
+        class="logo"
+        src="./images/logo.svg"
+        alt="PING logo: black letters that spell 'ping' followed by a blue dot."
+      />
+      <h1 class="title">
+        We are launching <span class="title-emphasis">soon!</span>
+      </h1>
+      <h2 class="subtitle">Subscribe and get notified</h2>
+      <form class="notification-form">
+        <fieldset class="form-fieldset">
+          <legend class="sr-only">Provide your email to get notified</legend>
+          <input
+          class="email-input"
+          name="mail"
+          type="email"
+          placeholder="Your email address..."
+          aria-describedby="emailErrorMessage"
+          required
+        />
+          <label class="email-label" for="mail">
+          </label>
+          <button class="submit-button" type="submit">Notify Me</button>
+          <p
+            class="email-error-message"
+            id="emailErrorMessage"
+            aria-live="assertive"
+          ></p>
+        </fieldset>
+      </form>
+      <img
+        class="illustration-dashboard"
+        src="./images/illustration-dashboard.png"
+        alt="An illustration of a web dashboard with graphs and illegible text"
+      />
+      <ul class="icon-list">
+        <li class="list-item">
+          <div class="icon-circle">
+            <i class="fa-brands fa-facebook-f fa-xs"></i>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="icon-circle">
+            <i class="fa-brands fa-twitter fa-xs"></i>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="icon-circle">
+            <i class="fa-brands fa-instagram fa-xs"></i>
+          </div>
+        </li>
+      </ul>
+      <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
+    </main>
+    <footer>
+      <p class="attribution">
+        Coded by
+        <a
+          class="attribution-link"
+          href="https://www.linkedin.com/in/mateo-rinland-9b1a93bb/"
+          aria-label="Mateo Rinland's LinkedIn profile"
+          >Mateo Rinland</a
+        >. Challenge by
+        <a
+          class="attribution-link"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >.
+      </p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
