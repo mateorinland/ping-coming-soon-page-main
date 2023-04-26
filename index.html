@@ -39,9 +39,7 @@
       </h1>
       <h2 class="subtitle">Subscribe and get notified</h2>
       <form class="notification-form">
-        <fieldset class="form-fieldset">
-          <legend class="sr-only">Provide your email to get notified</legend>
-          <input
+        <input
           class="email-input"
           id="mail"
           name="mail"
@@ -50,15 +48,15 @@
           aria-describedby="emailErrorMessage"
           required
         />
-          <label class="email-label" for="mail">
-          </label>
-          <button class="submit-button" type="submit">Notify Me</button>
-          <p
-            class="email-error-message"
-            id="emailErrorMessage"
-            aria-live="assertive"
-          ></p>
-        </fieldset>
+        <label class="email-label visually-hidden" for="mail"
+          >Email address</label
+        >
+        <button class="submit-button" type="submit">Notify Me</button>
+        <p
+          class="email-error-message"
+          id="emailErrorMessage"
+          aria-live="assertive"
+        ></p>
       </form>
       <img
         class="illustration-dashboard"
@@ -68,17 +66,23 @@
       <ul class="icon-list">
         <li class="list-item">
           <div class="icon-circle">
-            <i class="fa-brands fa-facebook-f fa-xs"></i>
+            <a href="#" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f fa-xs"></i>
+            </a>
           </div>
         </li>
         <li class="list-item">
           <div class="icon-circle">
-            <i class="fa-brands fa-twitter fa-xs"></i>
+            <a href="#" aria-label="Twitter">
+              <i class="fa-brands fa-twitter fa-xs"></i>
+            </a>
           </div>
         </li>
         <li class="list-item">
           <div class="icon-circle">
-            <i class="fa-brands fa-instagram fa-xs"></i>
+            <a href="#" aria-label="Instagram">
+              <i class="fa-brands fa-instagram fa-xs"></i>
+            </a>
           </div>
         </li>
       </ul>
