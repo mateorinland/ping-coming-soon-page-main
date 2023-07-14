@@ -1,6 +1,6 @@
 # Ping single column coming soon page main
 
-My solution for Frontend Mentor's Ping coming soon page main challenge
+My solution for Frontend Mentor's Ping coming soon page main challenge.
 
 Using HTML5, CSS3 + SASS, JavaScript ES2022
 * Semantic markup.
